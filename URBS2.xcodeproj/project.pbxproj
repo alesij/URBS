@@ -14,6 +14,15 @@
 		680F8FC4246C376700D38CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680F8FC3246C376700D38CCD /* Assets.xcassets */; };
 		680F8FC7246C376700D38CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680F8FC5246C376700D38CCD /* LaunchScreen.storyboard */; };
 		680F8FD1246C378300D38CCD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 680F8FD0246C378300D38CCD /* CloudKit.framework */; };
+		680F8FD4246D8FC000D38CCD /* Utente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F8FD3246D8FC000D38CCD /* Utente.swift */; };
+		680F8FD9246D97C700D38CCD /* Prodotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F8FD8246D97C700D38CCD /* Prodotto.swift */; };
+		680F8FDB246D9A3300D38CCD /* Negozio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F8FDA246D9A3300D38CCD /* Negozio.swift */; };
+		680F8FDD246D9D3C00D38CCD /* CategoriaDiNegozio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F8FDC246D9D3C00D38CCD /* CategoriaDiNegozio.swift */; };
+		680F8FDF246D9E2300D38CCD /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F8FDE246D9E2300D38CCD /* Barcode.swift */; };
+		680F8FE1246DA01D00D38CCD /* CategoriaDiProdotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F8FE0246DA01D00D38CCD /* CategoriaDiProdotto.swift */; };
+		680F8FE3246DA11200D38CCD /* CategoriaNegozio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F8FE2246DA11200D38CCD /* CategoriaNegozio.swift */; };
+		680F8FE5246DA1AA00D38CCD /* CategoriaProdotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F8FE4246DA1AA00D38CCD /* CategoriaProdotto.swift */; };
+		680F8FE7246DA26000D38CCD /* ProdottoInNegozio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F8FE6246DA26000D38CCD /* ProdottoInNegozio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +36,15 @@
 		680F8FC8246C376700D38CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		680F8FCE246C378000D38CCD /* URBS2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = URBS2.entitlements; sourceTree = "<group>"; };
 		680F8FD0246C378300D38CCD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		680F8FD3246D8FC000D38CCD /* Utente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utente.swift; sourceTree = "<group>"; };
+		680F8FD8246D97C700D38CCD /* Prodotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prodotto.swift; sourceTree = "<group>"; };
+		680F8FDA246D9A3300D38CCD /* Negozio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Negozio.swift; sourceTree = "<group>"; };
+		680F8FDC246D9D3C00D38CCD /* CategoriaDiNegozio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDiNegozio.swift; sourceTree = SOURCE_ROOT; };
+		680F8FDE246D9E2300D38CCD /* Barcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
+		680F8FE0246DA01D00D38CCD /* CategoriaDiProdotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDiProdotto.swift; sourceTree = "<group>"; };
+		680F8FE2246DA11200D38CCD /* CategoriaNegozio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaNegozio.swift; sourceTree = "<group>"; };
+		680F8FE4246DA1AA00D38CCD /* CategoriaProdotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaProdotto.swift; sourceTree = "<group>"; };
+		680F8FE6246DA26000D38CCD /* ProdottoInNegozio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdottoInNegozio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +87,7 @@
 				680F8FC3246C376700D38CCD /* Assets.xcassets */,
 				680F8FC5246C376700D38CCD /* LaunchScreen.storyboard */,
 				680F8FC8246C376700D38CCD /* Info.plist */,
+				680F8FD2246D8F5500D38CCD /* Model */,
 			);
 			path = URBS2;
 			sourceTree = "<group>";
@@ -79,6 +98,22 @@
 				680F8FD0246C378300D38CCD /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		680F8FD2246D8F5500D38CCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				680F8FDC246D9D3C00D38CCD /* CategoriaDiNegozio.swift */,
+				680F8FD3246D8FC000D38CCD /* Utente.swift */,
+				680F8FD8246D97C700D38CCD /* Prodotto.swift */,
+				680F8FDE246D9E2300D38CCD /* Barcode.swift */,
+				680F8FDA246D9A3300D38CCD /* Negozio.swift */,
+				680F8FE6246DA26000D38CCD /* ProdottoInNegozio.swift */,
+				680F8FE4246DA1AA00D38CCD /* CategoriaProdotto.swift */,
+				680F8FE0246DA01D00D38CCD /* CategoriaDiProdotto.swift */,
+				680F8FE2246DA11200D38CCD /* CategoriaNegozio.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680F8FE1246DA01D00D38CCD /* CategoriaDiProdotto.swift in Sources */,
+				680F8FDF246D9E2300D38CCD /* Barcode.swift in Sources */,
+				680F8FD4246D8FC000D38CCD /* Utente.swift in Sources */,
+				680F8FDB246D9A3300D38CCD /* Negozio.swift in Sources */,
+				680F8FD9246D97C700D38CCD /* Prodotto.swift in Sources */,
+				680F8FDD246D9D3C00D38CCD /* CategoriaDiNegozio.swift in Sources */,
+				680F8FE5246DA1AA00D38CCD /* CategoriaProdotto.swift in Sources */,
+				680F8FE7246DA26000D38CCD /* ProdottoInNegozio.swift in Sources */,
 				680F8FBF246C376600D38CCD /* ViewController.swift in Sources */,
+				680F8FE3246DA11200D38CCD /* CategoriaNegozio.swift in Sources */,
 				680F8FBB246C376600D38CCD /* AppDelegate.swift in Sources */,
 				680F8FBD246C376600D38CCD /* SceneDelegate.swift in Sources */,
 			);
