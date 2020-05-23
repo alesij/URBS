@@ -10,17 +10,19 @@ import Foundation
 import UIKit
 
 public class Barcode{
-    private var codBarcode:String // chiave
-    private var barcodeString:String?
-    private var barcodeImage:String? // non so se asset è uiimage in cloudkit. po s ver
+    private var codBarcode:Int // chiave
+    private var barcodeString:String
+    private var barcodeImage:String
+
     
-    init(cod:String,s:String){
+    init(cod:Int, str:String, imgURL:String){
         self.codBarcode = cod
-        self.barcodeString = s
+        self.barcodeString = str
+        self.barcodeImage = imgURL
     }
     
     /* setter */
-    public func setCodBarcode(codBarcode:String){
+    public func setCodBarcode(codBarcode:Int){
         self.codBarcode = codBarcode
     }
     
@@ -34,15 +36,15 @@ public class Barcode{
     
     
     /* getter */
-    public func getCodBarcode() -> String{
+    public func getCodBarcode() -> Int{
         self.codBarcode
     }
     
-    public func getBarcodeString() -> String?{
+    public func getBarcodeString() -> String{
         self.barcodeString
     }
     
-    public func getBarcodeImage() -> String?{
+    public func getBarcodeImage() -> String{
         self.barcodeImage
     }
     

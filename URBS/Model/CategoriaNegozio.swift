@@ -9,16 +9,16 @@
 import Foundation
 
 public class CategoriaNegozio{ // Tutte le categorie possibili
-    private var codiceCategoria:String
+    private var codiceCategoria:Int
     private var nome:String
     
-    init(Cod:String, nome:String){
+    init(Cod:Int, nome:String){
         self.codiceCategoria = Cod
         self.nome = nome
     }
     
     /* setter */
-    public func setCodiceCategoria(codCategoria:String){
+    public func setCodiceCategoria(codCategoria:Int){
         self.codiceCategoria = codCategoria
     }
     
@@ -27,7 +27,7 @@ public class CategoriaNegozio{ // Tutte le categorie possibili
     }
     
     /* getter */
-    public func getCodiceCategoria() -> String{
+    public func getCodiceCategoria() -> Int{
         self.codiceCategoria
     }
     

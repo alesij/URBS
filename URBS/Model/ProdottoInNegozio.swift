@@ -9,13 +9,14 @@
 import Foundation
 
 public class ProdottoInNegozio{
-    private var codiceProdotto:String
-    private var codiceNegozio:String
+    private var codiceProdotto:Int
+    private var codiceNegozio:Int
     private var availability:Bool
     private var prezzo:Double
+    private var foto:String?
     private var quantity:Int
     
-    init(codProdotto:String, codNegozio:String, disp:Bool, prezzo:Double, quantita:Int){
+    init(codProdotto:Int, codNegozio:Int, disp:Bool, prezzo:Double, quantita:Int){
         
         self.codiceProdotto = codProdotto
         self.codiceNegozio = codNegozio
@@ -25,11 +26,11 @@ public class ProdottoInNegozio{
     }
 
     /*setter*/
-    public func setCodiceProdotto(codProdotto:String){
+    public func setCodiceProdotto(codProdotto:Int){
         self.codiceProdotto = codProdotto
     }
     
-    public func setCodiceNegozio(codNegozio:String){
+    public func setCodiceNegozio(codNegozio:Int){
         self.codiceNegozio = codNegozio
     }
     
@@ -47,11 +48,11 @@ public class ProdottoInNegozio{
     
     
     /*getter*/
-    public func getCodiceProdotto() -> String{
+    public func getCodiceProdotto() -> Int{
         self.codiceProdotto
     }
     
-    public func getCodiceNegozio() -> String{
+    public func getCodiceNegozio() -> Int{
         self.codiceNegozio
     }
     

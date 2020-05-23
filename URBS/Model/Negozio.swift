@@ -11,25 +11,25 @@ import UIKit
 import CloudKit
 
 public class Negozio{
-    private var codNegozio:String?
+    private var codNegozio:Int?
     private var nome:String
-    private var citta:String
-    private var indirizzo:String // foss location in cloudkit. per mo ho lasciato stringa po verimm
-    private var logo:String? // non so se uiimage è asset in cloudkit s'adda verè
-    private var codProprietario:String?
+    private var city:String
+    private var indirizzo:String
+    private var logo:String
+    private var codProprietario:Int
     
-    init(nome:String, citta:String, indirizzo:String, logo:String){
-        self.codNegozio = nil
+    init(cod:Int,nome:String, citta:String, indirizzo:String, logo:String, utente:Int){
+        self.codNegozio = cod
         self.nome = nome
-        self.citta = citta
+        self.city = citta
         self.indirizzo = indirizzo
         self.logo = logo
-        self.codProprietario = nil
+        self.codProprietario = utente
     }
     
     
     /*setter*/
-    public func setCodNegozio(codice:String){
+    public func setCodNegozio(codice:Int){
         self.codNegozio = codice
     }
     
@@ -38,7 +38,7 @@ public class Negozio{
     }
     
     public func setCitta(citta:String){
-        self.citta = citta
+        self.city = citta
     }
     
     public func setIndirizzo(indirizzo:String){
@@ -49,12 +49,12 @@ public class Negozio{
         self.logo = logo
     }
     
-    public func setProprietario(codProprietario:String){
+    public func setProprietario(codProprietario:Int){
         self.codProprietario = codProprietario
     }
     
     /* getter */
-    public func getNegozio() -> String?{
+    public func getCodNegozio() -> Int?{
         self.codNegozio
     }
     
@@ -63,7 +63,7 @@ public class Negozio{
     }
     
     public func getCitta() -> String{
-        self.citta
+        self.city
     }
     
     public func getIndirizzo() -> String{
@@ -74,7 +74,7 @@ public class Negozio{
         self.logo
     }
     
-    public func getCodProprietario() -> String?{
+    public func getCodProprietario() -> Int{
         self.codProprietario
     }
     

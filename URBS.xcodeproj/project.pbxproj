@@ -22,6 +22,7 @@
 		680F903A24796B7800D38CCD /* CategoriaDiProdotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F903324796B7800D38CCD /* CategoriaDiProdotto.swift */; };
 		680F903D24796BB700D38CCD /* Negozio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F903B24796BB700D38CCD /* Negozio.swift */; };
 		680F903E24796BB700D38CCD /* Utente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F903C24796BB700D38CCD /* Utente.swift */; };
+		E7D197AA2479757B003446A1 /* BarcodeDiProdotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D197A92479757B003446A1 /* BarcodeDiProdotto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		680F903324796B7800D38CCD /* CategoriaDiProdotto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaDiProdotto.swift; sourceTree = "<group>"; };
 		680F903B24796BB700D38CCD /* Negozio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Negozio.swift; sourceTree = "<group>"; };
 		680F903C24796BB700D38CCD /* Utente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utente.swift; sourceTree = "<group>"; };
+		E7D197A92479757B003446A1 /* BarcodeDiProdotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDiProdotto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				680F902E24796B7800D38CCD /* Barcode.swift */,
+				E7D197A92479757B003446A1 /* BarcodeDiProdotto.swift */,
 				680F903224796B7800D38CCD /* CategoriaDiNegozio.swift */,
 				680F903324796B7800D38CCD /* CategoriaDiProdotto.swift */,
 				680F902D24796B7800D38CCD /* CategoriaNegozio.swift */,
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D197AA2479757B003446A1 /* BarcodeDiProdotto.swift in Sources */,
 				680F903E24796BB700D38CCD /* Utente.swift in Sources */,
 				680F903624796B7800D38CCD /* CategoriaProdotto.swift in Sources */,
 				680F903A24796B7800D38CCD /* CategoriaDiProdotto.swift in Sources */,

@@ -11,26 +11,25 @@ import Foundation
 import CloudKit
 
 public class Utente {
-    private var codUtente:String? // sessione.
-    private var email:String?
-    private var password:String?
-    private var tipologia:String?
-    private var nome:String?
-    private var cognome:String?
-    private var partitaIva:String?
+    private var codUtente:Int? // sessione.
+    private var email:String
+    private var password:String
+    private var tipologia:String
+    private var nome:String
+    private var cognome:String
+    private var partitaIva:String
     
     init(nome:String, cognome:String, partitaIva:String){
-        self.codUtente = nil
         self.nome = nome
         self.cognome = cognome
         self.partitaIva = partitaIva
         self.tipologia = "venditore"
-        self.email = nil
-        self.password = nil
+        self.email = ""
+        self.password = ""
     }
     
     /*setter*/
-    public func setCodiceUtente(codice:String){
+    public func setCodiceUtente(codice:Int){
         self.codUtente = codice
     }
     
@@ -59,7 +58,7 @@ public class Utente {
     }
     
     /*getter*/
-    public func getCodiceUtente() -> String?{
+    public func getCodiceUtente() -> Int?{
         self.codUtente
     }
     
@@ -72,18 +71,18 @@ public class Utente {
     }
     
     public func getTipologia() -> String{
-        self.tipologia!
+        self.tipologia
     }
     
     public func getCognome() -> String{
-        self.cognome!
+        self.cognome
     }
     
     public func getNome() -> String{
-        self.nome!
+        self.nome
     }
     
     public func getPartitaIva() -> String{
-        self.partitaIva!
+        self.partitaIva
     }
 }

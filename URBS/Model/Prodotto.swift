@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 public class Prodotto {
-    private var codiceProdotto:String
+    private var codiceProdotto:Int
     private var nome:String
     private var descrizione:String
     private var immagine:String?
     
-    init(codP:String, nome:String, descrizione:String, immagine:String){
+    init(codP:Int, nome:String, descrizione:String, immagine:String){
         self.codiceProdotto = codP
         self.nome = nome
         self.descrizione = descrizione
@@ -23,7 +23,7 @@ public class Prodotto {
     }
     
     /*setter*/
-    public func setCodiceProdotto(codice:String){
+    public func setCodiceProdotto(codice:Int){
         self.codiceProdotto = codice
     }
     
@@ -40,7 +40,7 @@ public class Prodotto {
     }
     
     /* getter */
-    public func getCodiceProdotto() -> String{
+    public func getCodiceProdotto() -> Int{
         self.codiceProdotto
     }
     
