@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		680F901924796AE100D38CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F901824796AE100D38CCD /* AppDelegate.swift */; };
 		680F901B24796AE100D38CCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F901A24796AE100D38CCD /* SceneDelegate.swift */; };
-		680F901D24796AE100D38CCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F901C24796AE100D38CCD /* ViewController.swift */; };
-		680F902024796AE100D38CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680F901E24796AE100D38CCD /* Main.storyboard */; };
 		680F902224796AE800D38CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680F902124796AE800D38CCD /* Assets.xcassets */; };
-		680F902524796AE800D38CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680F902324796AE800D38CCD /* LaunchScreen.storyboard */; };
 		680F903424796B7800D38CCD /* CategoriaNegozio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F902D24796B7800D38CCD /* CategoriaNegozio.swift */; };
 		680F903524796B7800D38CCD /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F902E24796B7800D38CCD /* Barcode.swift */; };
 		680F903624796B7800D38CCD /* CategoriaProdotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F902F24796B7800D38CCD /* CategoriaProdotto.swift */; };
@@ -22,6 +19,9 @@
 		680F903A24796B7800D38CCD /* CategoriaDiProdotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F903324796B7800D38CCD /* CategoriaDiProdotto.swift */; };
 		680F903D24796BB700D38CCD /* Negozio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F903B24796BB700D38CCD /* Negozio.swift */; };
 		680F903E24796BB700D38CCD /* Utente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F903C24796BB700D38CCD /* Utente.swift */; };
+		6882F76C247AA7470089D222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882F76A247AA7470089D222 /* ViewController.swift */; };
+		6882F76F247AA75A0089D222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882F76E247AA75A0089D222 /* Main.storyboard */; };
+		6882F771247AA7850089D222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882F770247AA7850089D222 /* LaunchScreen.storyboard */; };
 		E7D197AA2479757B003446A1 /* BarcodeDiProdotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D197A92479757B003446A1 /* BarcodeDiProdotto.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +29,7 @@
 		680F901524796AE100D38CCD /* URBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		680F901824796AE100D38CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		680F901A24796AE100D38CCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		680F901C24796AE100D38CCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		680F901F24796AE100D38CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		680F902124796AE800D38CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		680F902424796AE800D38CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680F902624796AE800D38CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		680F902D24796B7800D38CCD /* CategoriaNegozio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaNegozio.swift; sourceTree = "<group>"; };
 		680F902E24796B7800D38CCD /* Barcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
@@ -43,6 +40,9 @@
 		680F903324796B7800D38CCD /* CategoriaDiProdotto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaDiProdotto.swift; sourceTree = "<group>"; };
 		680F903B24796BB700D38CCD /* Negozio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Negozio.swift; sourceTree = "<group>"; };
 		680F903C24796BB700D38CCD /* Utente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utente.swift; sourceTree = "<group>"; };
+		6882F76A247AA7470089D222 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../Desktop/KitUrbs copy/KitUrbs/ViewController.swift"; sourceTree = "<group>"; };
+		6882F76E247AA75A0089D222 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6882F770247AA7850089D222 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7D197A92479757B003446A1 /* BarcodeDiProdotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDiProdotto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,10 +78,10 @@
 			children = (
 				680F901824796AE100D38CCD /* AppDelegate.swift */,
 				680F901A24796AE100D38CCD /* SceneDelegate.swift */,
-				680F901C24796AE100D38CCD /* ViewController.swift */,
-				680F901E24796AE100D38CCD /* Main.storyboard */,
+				6882F76E247AA75A0089D222 /* Main.storyboard */,
+				6882F770247AA7850089D222 /* LaunchScreen.storyboard */,
+				6882F76A247AA7470089D222 /* ViewController.swift */,
 				680F902124796AE800D38CCD /* Assets.xcassets */,
-				680F902324796AE800D38CCD /* LaunchScreen.storyboard */,
 				680F902624796AE800D38CCD /* Info.plist */,
 				680F902C24796B2B00D38CCD /* Model */,
 			);
@@ -163,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				680F902524796AE800D38CCD /* LaunchScreen.storyboard in Resources */,
 				680F902224796AE800D38CCD /* Assets.xcassets in Resources */,
-				680F902024796AE100D38CCD /* Main.storyboard in Resources */,
+				6882F771247AA7850089D222 /* LaunchScreen.storyboard in Resources */,
+				6882F76F247AA75A0089D222 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,8 +180,8 @@
 				680F903E24796BB700D38CCD /* Utente.swift in Sources */,
 				680F903624796B7800D38CCD /* CategoriaProdotto.swift in Sources */,
 				680F903A24796B7800D38CCD /* CategoriaDiProdotto.swift in Sources */,
+				6882F76C247AA7470089D222 /* ViewController.swift in Sources */,
 				680F903D24796BB700D38CCD /* Negozio.swift in Sources */,
-				680F901D24796AE100D38CCD /* ViewController.swift in Sources */,
 				680F901924796AE100D38CCD /* AppDelegate.swift in Sources */,
 				680F903924796B7800D38CCD /* CategoriaDiNegozio.swift in Sources */,
 				680F901B24796AE100D38CCD /* SceneDelegate.swift in Sources */,
@@ -193,25 +193,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		680F901E24796AE100D38CCD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				680F901F24796AE100D38CCD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		680F902324796AE800D38CCD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				680F902424796AE800D38CCD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		680F902724796AE800D38CCD /* Debug */ = {
@@ -331,15 +312,16 @@
 		680F902A24796AE800D38CCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NSU83CPB56;
 				INFOPLIST_FILE = URBS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.URBS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheUnpitchers.URBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -349,15 +331,16 @@
 		680F902B24796AE800D38CCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NSU83CPB56;
 				INFOPLIST_FILE = URBS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.URBS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheUnpitchers.URBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
