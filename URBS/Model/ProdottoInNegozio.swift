@@ -14,9 +14,10 @@ public class ProdottoInNegozio{
     private var availability:Bool
     private var prezzo:Double
     private var quantity:Int
+    private var descrizione:String?
+    private var immagine:String?
     
     init(codProdotto:Int, codNegozio:Int, disp:Bool, prezzo:Double, quantita:Int){
-        
         self.codiceProdotto = codProdotto
         self.codiceNegozio = codNegozio
         self.availability = disp
@@ -45,6 +46,15 @@ public class ProdottoInNegozio{
         self.quantity = quantita
     }
     
+    public func setDescrizione(descrizione:String){
+        self.descrizione = descrizione
+    }
+    
+    public func setImmagine(immagine:String){
+        self.immagine = immagine
+    }
+
+    
     
     /*getter*/
     public func getCodiceProdotto() -> Int{
@@ -65,6 +75,14 @@ public class ProdottoInNegozio{
     
     public func getQuantity() -> Int{
         self.quantity
+    }
+    
+    public func getDescrizione() -> String{
+        self.descrizione
+    }
+    
+    public func getImmagine() -> String?{
+        self.immagine
     }
     
 }
