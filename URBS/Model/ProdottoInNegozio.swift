@@ -13,7 +13,6 @@ public class ProdottoInNegozio{
     private var codiceNegozio:Int
     private var availability:Bool
     private var prezzo:Double
-    private var foto:String?
     private var quantity:Int
     
     init(codProdotto:Int, codNegozio:Int, disp:Bool, prezzo:Double, quantita:Int){
