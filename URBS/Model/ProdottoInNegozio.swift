@@ -77,7 +77,7 @@ public class ProdottoInNegozio{
         self.quantity
     }
     
-    public func getDescrizione() -> String{
+    public func getDescrizione() -> String?{
         self.descrizione
     }
     
