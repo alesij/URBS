@@ -14,13 +14,16 @@ public class Profilo {
     private var nome:String
     private var cognome:String
     private var pIva:String
-
+    private var cf:String
+    private var residenza:String
     
-    init( nomeNew:String, cognomeNew:String, pIvaNew:String){
+    init( nomeNew:String, cognomeNew:String, pIvaNew:String, codF:String, res:String){
         
         self.nome = nomeNew
         self.cognome = cognomeNew
         self.pIva = pIvaNew
+        self.cf = codF
+        self.residenza = res
     }
     
     
@@ -38,6 +41,13 @@ public class Profilo {
         self.pIva = piv
     }
     
+    public func setCf(codf:String){
+        self.cf = codf
+    }
+    
+    public func setPiva(res:String){
+        self.residenza = res
+    }
     
     /* getter */
     
@@ -51,6 +61,14 @@ public class Profilo {
     
     public func getPiva() -> String{
         self.pIva
+    }
+    
+    public func getCF() -> String{
+        self.cf
+    }
+    
+    public func getResidenza() -> String{
+        self.residenza
     }
 }
 
