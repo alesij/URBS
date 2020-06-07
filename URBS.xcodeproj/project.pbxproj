@@ -22,6 +22,9 @@
 		6882F76F247AA75A0089D222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882F76E247AA75A0089D222 /* Main.storyboard */; };
 		6882F771247AA7850089D222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882F770247AA7850089D222 /* LaunchScreen.storyboard */; };
 		68EB7930248500E900AA7DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB792F248500E900AA7DBA /* ViewController.swift */; };
+		68EB7936248A8CED00AA7DBA /* NegozioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */; };
+		68EB793A248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68EB7938248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf */; };
+		68EB793B248A9BF500AA7DBA /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68EB7939248A9BF500AA7DBA /* SF-Pro-Text-Heavy.otf */; };
 		B6D4A67A248A54B2007F43EC /* Profilo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4A679248A54B2007F43EC /* Profilo.swift */; };
 		E7D197AA2479757B003446A1 /* BarcodeDiProdotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D197A92479757B003446A1 /* BarcodeDiProdotto.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,9 @@
 		6882F76E247AA75A0089D222 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6882F770247AA7850089D222 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68EB792F248500E900AA7DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegozioTableViewController.swift; sourceTree = "<group>"; };
+		68EB7938248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		68EB7939248A9BF500AA7DBA /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
 		B6D4A679248A54B2007F43EC /* Profilo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profilo.swift; sourceTree = "<group>"; };
 		E7D197A92479757B003446A1 /* BarcodeDiProdotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDiProdotto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,9 +88,11 @@
 				680F901A24796AE100D38CCD /* SceneDelegate.swift */,
 				6882F76E247AA75A0089D222 /* Main.storyboard */,
 				6882F770247AA7850089D222 /* LaunchScreen.storyboard */,
+				68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */,
 				680F902124796AE800D38CCD /* Assets.xcassets */,
 				680F902624796AE800D38CCD /* Info.plist */,
 				68EB792F248500E900AA7DBA /* ViewController.swift */,
+				68EB7937248A99F400AA7DBA /* Resources */,
 				680F902C24796B2B00D38CCD /* Model */,
 			);
 			path = URBS;
@@ -106,6 +114,15 @@
 				680F903124796B7800D38CCD /* ProdottoInNegozio.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		68EB7937248A99F400AA7DBA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68EB7939248A9BF500AA7DBA /* SF-Pro-Text-Heavy.otf */,
+				68EB7938248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +183,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68EB793A248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf in Resources */,
 				680F902224796AE800D38CCD /* Assets.xcassets in Resources */,
+				68EB793B248A9BF500AA7DBA /* SF-Pro-Text-Heavy.otf in Resources */,
 				6882F771247AA7850089D222 /* LaunchScreen.storyboard in Resources */,
 				6882F76F247AA75A0089D222 /* Main.storyboard in Resources */,
 			);
@@ -185,6 +204,7 @@
 				680F903624796B7800D38CCD /* CategoriaProdotto.swift in Sources */,
 				680F903A24796B7800D38CCD /* CategoriaDiProdotto.swift in Sources */,
 				680F903D24796BB700D38CCD /* Negozio.swift in Sources */,
+				68EB7936248A8CED00AA7DBA /* NegozioTableViewController.swift in Sources */,
 				680F901924796AE100D38CCD /* AppDelegate.swift in Sources */,
 				680F903924796B7800D38CCD /* CategoriaDiNegozio.swift in Sources */,
 				680F901B24796AE100D38CCD /* SceneDelegate.swift in Sources */,
