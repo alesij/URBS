@@ -36,7 +36,7 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
 //    prova
     @IBOutlet weak var searchBarNegozio: UISearchBar!
     @IBOutlet weak var negozioTableView: UITableView!
-    var negozi = [Negozio(cod: 1, nome: "Barber shop di Lello & Franco", citta: "Napoli", indirizzo: "via salvatore saltalamacchia d'autunno 11", logo: "Barcode", utente: 11),Negozio(cod: 1, nome: "Il negozio bello", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "Barcode", utente: 11),Negozio(cod: 1, nome: "CIAO", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "Barcode", utente: 11),Negozio(cod: 1, nome: "l negozio bellooooooooooooooooooo", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "Barcode", utente: 11)]
+    var negozi = [Negozio(cod: 1, nome: "Barber shop di Lello & Franco", citta: "Napoli", indirizzo: "via salvatore saltalamacchia d'autunno 11", logo: "", utente: 11),Negozio(cod: 1, nome: "Il negozio bello", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "Barcode", utente: 11),Negozio(cod: 1, nome: "CIAO", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "Barcode", utente: 11),Negozio(cod: 1, nome: "l negozio bellooooooooooooooooooo", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "Barcode", utente: 11)]
     
 
     override func viewDidLoad() {
