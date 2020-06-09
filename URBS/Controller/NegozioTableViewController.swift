@@ -94,6 +94,12 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(identifier: "detailNegozio") as! DetailNegozioViewController
+        vc.negozio = negozi[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBarNegozio.text == ""{
             searching = false
