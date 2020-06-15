@@ -23,6 +23,7 @@
 		6827268F248FC3D3005DB941 /* ProdottoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6827268E248FC3D3005DB941 /* ProdottoTableViewCell.swift */; };
 		6882F76F247AA75A0089D222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882F76E247AA75A0089D222 /* Main.storyboard */; };
 		6882F771247AA7850089D222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882F770247AA7850089D222 /* LaunchScreen.storyboard */; };
+		68D22A622497BCBC00AAD87E /* ProdottiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D22A612497BCBC00AAD87E /* ProdottiViewController.swift */; };
 		68EB7930248500E900AA7DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB792F248500E900AA7DBA /* ViewController.swift */; };
 		68EB7936248A8CED00AA7DBA /* NegozioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */; };
 		68EB793A248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68EB7938248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf */; };
@@ -50,6 +51,7 @@
 		6827268E248FC3D3005DB941 /* ProdottoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdottoTableViewCell.swift; sourceTree = "<group>"; };
 		6882F76E247AA75A0089D222 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6882F770247AA7850089D222 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68D22A612497BCBC00AAD87E /* ProdottiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdottiViewController.swift; sourceTree = "<group>"; };
 		68EB792F248500E900AA7DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegozioTableViewController.swift; sourceTree = "<group>"; };
 		68EB7938248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */,
+				68D22A612497BCBC00AAD87E /* ProdottiViewController.swift */,
 				6827268C248D3195005DB941 /* DetailNegozioViewController.swift */,
 			);
 			path = Controller;
@@ -229,6 +232,7 @@
 				680F903724796B7800D38CCD /* Prodotto.swift in Sources */,
 				680F903424796B7800D38CCD /* CategoriaNegozio.swift in Sources */,
 				680F903824796B7800D38CCD /* ProdottoInNegozio.swift in Sources */,
+				68D22A622497BCBC00AAD87E /* ProdottiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

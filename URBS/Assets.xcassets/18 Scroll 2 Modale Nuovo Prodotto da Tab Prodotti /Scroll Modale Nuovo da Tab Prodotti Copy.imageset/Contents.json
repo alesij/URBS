@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Scroll Modale Nuovo da Tab Prodotti Copy.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Scroll Modale Nuovo da Tab Prodotti Copy@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Scroll Modale Nuovo da Tab Prodotti Copy@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
