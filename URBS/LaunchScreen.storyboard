@@ -21,10 +21,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="2gM-gs-rex" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="1QI-yF-2xx"/>
-                            <constraint firstItem="2gM-gs-rex" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Mxv-jE-dix"/>
-                            <constraint firstItem="2gM-gs-rex" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="VdO-ZC-3d8"/>
-                            <constraint firstItem="2gM-gs-rex" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mqX-Mb-XjS"/>
+                            <constraint firstAttribute="bottom" secondItem="2gM-gs-rex" secondAttribute="bottom" id="MPf-0a-MXW"/>
+                            <constraint firstItem="2gM-gs-rex" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V6B-d6-EUT"/>
+                            <constraint firstItem="2gM-gs-rex" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Yqz-wC-GWW"/>
+                            <constraint firstItem="2gM-gs-rex" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="emY-y8-UTs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
