@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Group 11 Copy copy.png",
+      "filename" : "cheescake.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Group 11 Copy@2x copy.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Group 11 Copy@3x copy.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

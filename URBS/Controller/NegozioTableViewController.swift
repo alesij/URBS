@@ -24,7 +24,6 @@ class NegozioTableViewCell: UITableViewCell{
     @IBOutlet weak var negozioLogo: UIImageView!
     @IBOutlet weak var cittaLabel: UILabel!
     @IBOutlet weak var indirizzoLabel: UILabel!
-
 }
 
 
@@ -36,7 +35,7 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
 //    prova
     @IBOutlet weak var searchBarNegozio: UISearchBar!
     @IBOutlet weak var negozioTableView: UITableView!
-    var negozi = [Negozio(cod: 1, nome: "Barber shop di Lello & Franco", citta: "Napoli", indirizzo: "via salvatore saltalamacchia d'autunno 11", logo: "", utente: 11),Negozio(cod: 1, nome: "Il negozio bello", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "Barcode", utente: 11),Negozio(cod: 1, nome: "CIAO", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "Barcode", utente: 11),Negozio(cod: 1, nome: "l negozio bellooooooooooooooooooo", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "Barcode", utente: 11)]
+    var negozi = [Negozio(cod: 1, nome: "Barber shop di Lello & Franco", citta: "Napoli", indirizzo: "via salvatore saltalamacchia d'autunno 11", logo: "Barber", utente: 11),Negozio(cod: 2, nome: "H&M", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "hem", utente: 11),Negozio(cod: 3, nome: "Bakery", citta: "Napoli", indirizzo: "Via Napoli 22", logo: "bakery", utente: 11),Negozio(cod: 4, nome: "Adidas Outlet", citta: "Caserta", indirizzo: "Via delle colombe 33", logo: "adidas", utente: 11)]
     
 
     override func viewDidLoad() {
@@ -44,9 +43,15 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
         negozioTableView.delegate = self
         negozioTableView.dataSource = self
         
+        view.layer.masksToBounds = true;
         searchBarNegozio.delegate = self
         searchBarNegozio.returnKeyType = UIReturnKeyType.done
-        }
+        
+        let immagine = UIImageView()
+        immagine.image = UIImage(named: "Negozi")
+        self.navigationController?.navigationItem.titleView = immagine
+        
+    }
     
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -65,6 +70,10 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
             cell.cittaLabel?.text = negozio.getCitta()
             cell.indirizzoLabel?.text = negozio.getIndirizzo()
             cell.negozioLogo?.image = UIImage(named: negozio.getLogo()!)
+            cell.negozioLogo.layer.cornerRadius = 15
+            cell.negozioLogo.layer.masksToBounds = true
+            cell.negozioLogo.layer.borderWidth = 0;
+
         } else {
             let negozio = negozi[indexPath.row]
             cell.nomeNegozioLabel.adjustsFontSizeToFitWidth = true
@@ -78,6 +87,9 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
             cell.cittaLabel?.text = negozio.getCitta()
             cell.indirizzoLabel?.text = negozio.getIndirizzo()
             cell.negozioLogo?.image = UIImage(named: negozio.getLogo()!)
+            cell.negozioLogo.layer.cornerRadius = 15
+            cell.negozioLogo.layer.masksToBounds = true
+            cell.negozioLogo.layer.borderWidth = 0;
         }
 
         
