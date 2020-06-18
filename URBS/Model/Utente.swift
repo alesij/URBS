@@ -10,7 +10,7 @@
 import Foundation
 import CloudKit
 
-public class Utente {
+public class Utente: Codable {
     private var codUtente:Int? // sessione.
     private var email:String
     private var password:String

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class CategoriaDiProdotto{ // coppie codiceNegozio - codiceCategoria
+public class CategoriaDiProdotto: Codable{ // coppie codiceNegozio - codiceCategoria
     
     private var codiceProdotto:Int
     private var codiceCategoria:Int

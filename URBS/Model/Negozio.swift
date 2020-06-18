@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import CloudKit
 
-public class Negozio{
+public class Negozio: Codable{
     private var codNegozio:Int?
     private var nome:String
     private var city:String

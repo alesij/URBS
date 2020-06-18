@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class Prodotto {
+public class Prodotto: Codable {
     private var codiceProdotto:Int
     private var nome:String
 

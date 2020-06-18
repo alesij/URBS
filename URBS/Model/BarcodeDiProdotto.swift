@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BarcodeProdotto{
+class BarcodeProdotto: Codable{
     private var codBarcode:Int
     private var codProdotto:Int
     

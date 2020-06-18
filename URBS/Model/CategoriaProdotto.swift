@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CategoriaProdotto{ // Tutte le categorie possibili
+class CategoriaProdotto: Codable{ // Tutte le categorie possibili
     var codiceCategoria:Int
     var nome:String
     

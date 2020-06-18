@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ProdottoTableViewCell{
+class ProdottoTableViewCell: Codable{
     private var nome:String
     private var codiceProdotto:Int
     private var codiceNegozio:Int

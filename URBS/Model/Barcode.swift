@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class Barcode{
+public class Barcode: Codable{
     private var codBarcode:Int // chiave
     private var barcodeString:String
     private var barcodeImage:String

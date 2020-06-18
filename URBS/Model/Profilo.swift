@@ -10,7 +10,7 @@
 import Foundation
 import UIKit
 
-public class Profilo {
+public class Profilo: Codable {
     private var nome:String
     private var cognome:String
     private var pIva:String

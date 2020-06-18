@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ProdottoInNegozio{
+public class ProdottoInNegozio: Codable{
     private var codiceProdotto:Int
     private var codiceNegozio:Int
     private var availability:Bool
