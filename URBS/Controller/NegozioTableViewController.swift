@@ -37,7 +37,7 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var negozioTableView: UITableView!
     var negozi = [Negozio]()
 //    var negozi = [Negozio(cod: 1, nome: "Barber shop di Lello & Franco", citta: "Napoli", indirizzo: "via salvatore saltalamacchia d'autunno 11", logo: "Barber", utente: 11),Negozio(cod: 2, nome: "H&M", citta: "Napoli", indirizzo: "Via delle grazie 11", logo: "hem", utente: 11),Negozio(cod: 3, nome: "Bakery", citta: "Napoli", indirizzo: "Via Napoli 22", logo: "bakery", utente: 11),Negozio(cod: 4, nome: "Adidas Outlet", citta: "Caserta", indirizzo: "Via delle colombe 33", logo: "adidas", utente: 11)]
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +52,8 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
         immagine.image = UIImage(named: "Negozi")
         self.navigationController?.navigationItem.titleView = immagine
         self.hideKeyboardWhenTappedAround()
+        UserDefaults.standard.set(0, forKey: "UID")
+        
     }
     
     

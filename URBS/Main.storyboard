@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IsL-49-Idm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -100,7 +100,6 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="Yxx-Z5-dUN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3374" y="-1"/>
         </scene>
@@ -1010,7 +1009,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="97N-rx-cUV">
             <objects>
-                <tabBarController id="9gb-5r-v0L" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9gb-5r-v0L" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="iWT-Dd-9hm"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="43a-bw-kps">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -1029,10 +1028,10 @@
             </objects>
             <point key="canvasLocation" x="551" y="972"/>
         </scene>
-        <!--Login View Controller-->
+        <!--login-->
         <scene sceneID="3Ie-bh-tCv">
             <objects>
-                <viewController id="tNW-F3-xaH" customClass="LoginViewController" customModule="URBS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tNW-F3-xaH" customClass="LoginViewController" customModule="URBS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x0c-yV-TlO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1104,82 +1103,9 @@
             <point key="canvasLocation" x="-281" y="462"/>
         </scene>
         <!--Negozio-->
-        <scene sceneID="88v-Ap-Zvc">
-            <objects>
-                <viewController id="IsL-49-Idm" customClass="ViewController" customModule="URBS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LEo-ai-OUe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idG-KE-2Sb">
-                                <rect key="frame" x="24" y="379" width="366" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PARTITA IVA " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KSc-Ql-cuJ">
-                                <rect key="frame" x="24" y="483" width="366" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="COGNOME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wyC-Tz-H0g">
-                                <rect key="frame" x="24" y="435" width="366" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="NameTextField:" destination="6JW-Dk-DTs" eventType="editingDidEnd" id="Ady-2Q-bTb"/>
-                                    <action selector="NameTextField:" destination="Yxx-Z5-dUN" eventType="editingDidEnd" id="s1t-yb-6s2"/>
-                                    <action selector="nameTextField:" destination="Yxx-Z5-dUN" eventType="editingDidEnd" id="7ZM-4s-xju"/>
-                                    <action selector="nameTextField:" destination="6JW-Dk-DTs" eventType="editingDidEnd" id="UG9-MD-Kve"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVE-Kl-gXj">
-                                <rect key="frame" x="24" y="525" width="366" height="30"/>
-                                <state key="normal" title="Fatto"/>
-                                <connections>
-                                    <segue destination="9gb-5r-v0L" kind="presentation" modalPresentationStyle="overFullScreen" id="5Zf-FQ-SjT"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="KSc-Ql-cuJ" firstAttribute="top" secondItem="wyC-Tz-H0g" secondAttribute="bottom" constant="14" id="5QS-ky-ZHv"/>
-                            <constraint firstItem="OCu-i8-ac5" firstAttribute="trailing" secondItem="KSc-Ql-cuJ" secondAttribute="trailing" constant="24" id="7a7-7c-37V"/>
-                            <constraint firstItem="wyC-Tz-H0g" firstAttribute="top" secondItem="idG-KE-2Sb" secondAttribute="bottom" constant="22" id="BLH-HK-hwE"/>
-                            <constraint firstItem="idG-KE-2Sb" firstAttribute="top" secondItem="OCu-i8-ac5" secondAttribute="top" constant="335" id="Fgf-1m-tGq"/>
-                            <constraint firstItem="OCu-i8-ac5" firstAttribute="trailing" secondItem="LVE-Kl-gXj" secondAttribute="trailing" constant="24" id="FrH-OV-T9G"/>
-                            <constraint firstItem="idG-KE-2Sb" firstAttribute="leading" secondItem="OCu-i8-ac5" secondAttribute="leading" constant="24" id="INV-sf-ZOv"/>
-                            <constraint firstItem="KSc-Ql-cuJ" firstAttribute="leading" secondItem="OCu-i8-ac5" secondAttribute="leading" constant="24" id="SkW-Zo-Bvn"/>
-                            <constraint firstItem="LVE-Kl-gXj" firstAttribute="leading" secondItem="OCu-i8-ac5" secondAttribute="leading" constant="24" id="Swi-H6-TqX"/>
-                            <constraint firstItem="LVE-Kl-gXj" firstAttribute="top" secondItem="KSc-Ql-cuJ" secondAttribute="bottom" constant="8" id="UOU-5Q-OrT"/>
-                            <constraint firstItem="wyC-Tz-H0g" firstAttribute="leading" secondItem="OCu-i8-ac5" secondAttribute="leading" constant="24" id="kfr-AK-2Nh"/>
-                            <constraint firstItem="OCu-i8-ac5" firstAttribute="trailing" secondItem="wyC-Tz-H0g" secondAttribute="trailing" constant="24" id="nmn-EF-Kdk"/>
-                            <constraint firstItem="OCu-i8-ac5" firstAttribute="trailing" secondItem="idG-KE-2Sb" secondAttribute="trailing" constant="24" id="r8o-Hq-M1E"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="OCu-i8-ac5"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Negozio" id="uNy-fo-jQS">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="xCL-t3-LSY">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fXo-mH-Tk0">
-                                <rect key="frame" x="292" y="7" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Fatto"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hp9-WZ-0Gd" sceneMemberID="firstResponder"/>
-                <exit id="6JW-Dk-DTs" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="550.72463768115949" y="101.78571428571428"/>
-        </scene>
-        <!--Negozio-->
         <scene sceneID="95c-Jg-ons">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="alL-e3-r3y" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="negozioTab" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="alL-e3-r3y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Negozio" image="Negozio" id="Zx3-Dw-X39"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sba-Ps-L3B">
