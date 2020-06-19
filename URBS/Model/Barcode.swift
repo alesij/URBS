@@ -10,20 +10,20 @@ import Foundation
 import UIKit
 
 public class Barcode: Codable{
-    private var codBarcode:Int // chiave
+    private var codBarCode:Int // chiave
     private var barcodeString:String
     private var barcodeImage:String
 
     
     init(cod:Int, str:String, imgURL:String){
-        self.codBarcode = cod
+        self.codBarCode = cod
         self.barcodeString = str
         self.barcodeImage = imgURL
     }
     
     /* setter */
     public func setCodBarcode(codBarcode:Int){
-        self.codBarcode = codBarcode
+        self.codBarCode = codBarcode
     }
     
     public func setBarcodeString(barcodeString:String){
@@ -37,7 +37,7 @@ public class Barcode: Codable{
     
     /* getter */
     public func getCodBarcode() -> Int{
-        self.codBarcode
+        self.codBarCode
     }
     
     public func getBarcodeString() -> String{

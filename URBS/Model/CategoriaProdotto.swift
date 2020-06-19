@@ -10,11 +10,11 @@ import Foundation
 
 class CategoriaProdotto: Codable{ // Tutte le categorie possibili
     var codiceCategoria:Int
-    var nome:String
+    var nomeProdotto:String
     
     init(Cod:Int, nome:String){
         self.codiceCategoria = Cod
-        self.nome = nome
+        self.nomeProdotto = nome
     }
     
     /* setter */
@@ -22,8 +22,8 @@ class CategoriaProdotto: Codable{ // Tutte le categorie possibili
         self.codiceCategoria = codCategoria
     }
     
-    public func setNome(nome:String){
-        self.nome = nome
+    public func setNomeProdotto(nome:String){
+        self.nomeProdotto = nome
     }
     
     /* getter */
@@ -31,8 +31,8 @@ class CategoriaProdotto: Codable{ // Tutte le categorie possibili
         self.codiceCategoria
     }
     
-    public func getNome() -> String{
-        self.nome
+    public func getNomeProdotto() -> String{
+        self.nomeProdotto
     }
     
 }

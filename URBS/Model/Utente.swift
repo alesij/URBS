@@ -11,26 +11,26 @@ import Foundation
 import CloudKit
 
 public class Utente: Codable {
-    private var codUtente:Int? // sessione.
+    private var codiceUtente:Int? // sessione.
     private var email:String
-    private var password:String
+    private var pass:String
     private var tipologia:String
     private var nome:String
     private var cognome:String
-    private var partitaIva:String
+    private var partitaIVA:String
     
     init(nome:String, cognome:String, partitaIva:String){
         self.nome = nome
         self.cognome = cognome
-        self.partitaIva = partitaIva
+        self.partitaIVA = partitaIva
         self.tipologia = "venditore"
         self.email = ""
-        self.password = ""
+        self.pass = ""
     }
     
     /*setter*/
     public func setCodiceUtente(codice:Int){
-        self.codUtente = codice
+        self.codiceUtente = codice
     }
     
     public func setEmail(email:String){
@@ -38,7 +38,7 @@ public class Utente: Codable {
     }
     
     public func setPassword(password:String){
-        self.password = password
+        self.pass = password
     }
     
     public func setTipologia(tipologia:String){
@@ -54,12 +54,12 @@ public class Utente: Codable {
     }
     
     public func setPartitaIva(partitaIva:String){
-        self.partitaIva = partitaIva
+        self.partitaIVA = partitaIva
     }
     
     /*getter*/
     public func getCodiceUtente() -> Int?{
-        self.codUtente
+        self.codiceUtente
     }
     
     public func getEmail() -> String?{
@@ -67,7 +67,7 @@ public class Utente: Codable {
     }
     
     public func getPassword() -> String?{
-        self.password
+        self.pass
     }
     
     public func getTipologia() -> String{
@@ -83,6 +83,6 @@ public class Utente: Codable {
     }
     
     public func getPartitaIva() -> String{
-        self.partitaIva
+        self.partitaIVA
     }
 }

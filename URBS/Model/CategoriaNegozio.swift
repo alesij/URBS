@@ -10,11 +10,11 @@ import Foundation
 
 public class CategoriaNegozio: Codable{ // Tutte le categorie possibili
     private var codiceCategoria:Int
-    private var nome:String
+    private var nomeCategoria:String
     
     init(Cod:Int, nome:String){
         self.codiceCategoria = Cod
-        self.nome = nome
+        self.nomeCategoria = nome
     }
     
     /* setter */
@@ -23,7 +23,7 @@ public class CategoriaNegozio: Codable{ // Tutte le categorie possibili
     }
     
     public func setNome(nome:String){
-        self.nome = nome
+        self.nomeCategoria = nome
     }
     
     /* getter */

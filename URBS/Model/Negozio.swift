@@ -11,26 +11,26 @@ import UIKit
 import CloudKit
 
 public class Negozio: Codable{
-    private var codNegozio:Int?
+    private var codiceNegozio:Int?
     private var nome:String
     private var city:String
     private var indirizzo:String
     private var logo:String
-    private var codProprietario:Int
+    private var codiceUtente:Int
     
     init(cod:Int,nome:String, citta:String, indirizzo:String, logo:String, utente:Int){
-        self.codNegozio = cod
+        self.codiceNegozio = cod
         self.nome = nome
         self.city = citta
         self.indirizzo = indirizzo
         self.logo = logo
-        self.codProprietario = utente
+        self.codiceUtente = utente
     }
     
     
     /*setter*/
     public func setCodNegozio(codice:Int){
-        self.codNegozio = codice
+        self.codiceNegozio = codice
     }
     
     public func setNome(nome:String){
@@ -49,13 +49,13 @@ public class Negozio: Codable{
         self.logo = logo
     }
     
-    public func setProprietario(codProprietario:Int){
-        self.codProprietario = codProprietario
+    public func setProprietario(codUtente:Int){
+        self.codiceUtente = codUtente
     }
     
     /* getter */
     public func getCodNegozio() -> Int?{
-        self.codNegozio
+        self.codiceNegozio
     }
     
     public func getNome() -> String{
@@ -74,8 +74,8 @@ public class Negozio: Codable{
         self.logo
     }
     
-    public func getCodProprietario() -> Int{
-        self.codProprietario
+    public func getCodUtente() -> Int{
+        self.codiceUtente
     }
     
 }

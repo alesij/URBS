@@ -28,7 +28,6 @@
 		68EB7936248A8CED00AA7DBA /* NegozioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */; };
 		68EB793A248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68EB7938248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf */; };
 		68EB793B248A9BF500AA7DBA /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68EB7939248A9BF500AA7DBA /* SF-Pro-Text-Heavy.otf */; };
-		B6D4A67A248A54B2007F43EC /* Profilo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4A679248A54B2007F43EC /* Profilo.swift */; };
 		E7D197AA2479757B003446A1 /* BarcodeDiProdotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D197A92479757B003446A1 /* BarcodeDiProdotto.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +55,6 @@
 		68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegozioTableViewController.swift; sourceTree = "<group>"; };
 		68EB7938248A9BF500AA7DBA /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		68EB7939248A9BF500AA7DBA /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
-		B6D4A679248A54B2007F43EC /* Profilo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profilo.swift; sourceTree = "<group>"; };
 		E7D197A92479757B003446A1 /* BarcodeDiProdotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDiProdotto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +114,6 @@
 				680F903B24796BB700D38CCD /* Negozio.swift */,
 				680F903C24796BB700D38CCD /* Utente.swift */,
 				680F903024796B7800D38CCD /* Prodotto.swift */,
-				B6D4A679248A54B2007F43EC /* Profilo.swift */,
 				680F903124796B7800D38CCD /* ProdottoInNegozio.swift */,
 				6827268E248FC3D3005DB941 /* ProdottoTableViewCell.swift */,
 			);
@@ -216,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7D197AA2479757B003446A1 /* BarcodeDiProdotto.swift in Sources */,
-				B6D4A67A248A54B2007F43EC /* Profilo.swift in Sources */,
 				680F903E24796BB700D38CCD /* Utente.swift in Sources */,
 				680F903624796B7800D38CCD /* CategoriaProdotto.swift in Sources */,
 				680F903A24796B7800D38CCD /* CategoriaDiProdotto.swift in Sources */,
