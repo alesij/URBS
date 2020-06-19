@@ -937,12 +937,12 @@
             </objects>
             <point key="canvasLocation" x="2623.1884057971015" y="770.75892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Registrazione View Controller-->
         <scene sceneID="XmK-zY-VxQ">
             <objects>
-                <viewController id="vSK-UE-egZ" sceneMemberID="viewController">
+                <viewController id="vSK-UE-egZ" customClass="RegistrazioneViewController" customModule="URBS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i6U-fi-7Jh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inserisci i tuoi dati" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzf-If-KoE">
@@ -974,6 +974,9 @@
                                 <rect key="frame" x="108" y="475" width="225" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Pulsante registrazione"/>
+                                <connections>
+                                    <action selector="RegistrazionePressed:" destination="vSK-UE-egZ" eventType="touchUpInside" id="ZDS-el-sfq"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Partita IVA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7g9-3u-xpt">
                                 <rect key="frame" x="89" y="329" width="244" height="34"/>
@@ -991,10 +994,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Z7a-tK-B6J"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eVl-TS-nbG"/>
+                    <connections>
+                        <outlet property="cognomeTextField" destination="J2f-fC-M4q" id="0jd-h5-Ucf"/>
+                        <outlet property="emailTextField" destination="OQN-ai-v2B" id="gNn-ab-emK"/>
+                        <outlet property="nomeTextField" destination="VAm-4g-C57" id="QwQ-Qz-uYV"/>
+                        <outlet property="partitaIvaTextField" destination="7g9-3u-xpt" id="FK7-i6-A2a"/>
+                        <outlet property="passwordTextFIeld" destination="3Z0-wI-Yb8" id="yei-E9-Di2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LF3-JU-KTc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-269.56521739130437" y="1138.3928571428571"/>
+            <point key="canvasLocation" x="-235" y="1177"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="97N-rx-cUV">
@@ -1018,10 +1029,10 @@
             </objects>
             <point key="canvasLocation" x="551" y="972"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="3Ie-bh-tCv">
             <objects>
-                <viewController id="tNW-F3-xaH" sceneMemberID="viewController">
+                <viewController id="tNW-F3-xaH" customClass="LoginViewController" customModule="URBS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x0c-yV-TlO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1058,6 +1069,9 @@
                                 <rect key="frame" x="103" y="485" width="208" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Pulsante"/>
+                                <connections>
+                                    <action selector="loginPressed:" destination="tNW-F3-xaH" eventType="touchUpInside" id="wL2-Uu-7AT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="T2o-UI-S2y">
                                 <rect key="frame" x="112" y="710" width="191" height="50"/>
@@ -1065,6 +1079,9 @@
                                 <state key="normal" title="Non hai ancora un account?         Registrati subito">
                                     <color key="titleColor" name="Grigio scuro"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vSK-UE-egZ" kind="show" id="hhg-RE-p8Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvy-bk-QgA">
                                 <rect key="frame" x="128" y="650" width="158" height="30"/>
@@ -1077,6 +1094,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ebh-cH-dY7"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="QoF-w6-r4k" id="ubW-uT-rIH"/>
+                        <outlet property="passwordTextField" destination="Z4k-Xw-Ihc" id="VFO-g7-LGm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihE-bu-jhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1227,7 +1248,7 @@
                                 </state>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJ4-UM-BhS">
-                                <rect key="frame" x="0.5" y="0.0" width="413.5" height="44"/>
+                                <rect key="frame" x="1" y="0.0" width="413" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Profilo" id="onq-oE-DCI">

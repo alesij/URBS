@@ -23,6 +23,8 @@
 		6827268F248FC3D3005DB941 /* ProdottoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6827268E248FC3D3005DB941 /* ProdottoTableViewCell.swift */; };
 		6882F76F247AA75A0089D222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882F76E247AA75A0089D222 /* Main.storyboard */; };
 		6882F771247AA7850089D222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882F770247AA7850089D222 /* LaunchScreen.storyboard */; };
+		68BF81ED249CF557000916D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF81EC249CF557000916D5 /* LoginViewController.swift */; };
+		68BF81EF249CF699000916D5 /* RegistrazioneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF81EE249CF699000916D5 /* RegistrazioneViewController.swift */; };
 		68D22A622497BCBC00AAD87E /* ProdottiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D22A612497BCBC00AAD87E /* ProdottiViewController.swift */; };
 		68EB7930248500E900AA7DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB792F248500E900AA7DBA /* ViewController.swift */; };
 		68EB7936248A8CED00AA7DBA /* NegozioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */; };
@@ -50,6 +52,8 @@
 		6827268E248FC3D3005DB941 /* ProdottoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdottoTableViewCell.swift; sourceTree = "<group>"; };
 		6882F76E247AA75A0089D222 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6882F770247AA7850089D222 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68BF81EC249CF557000916D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		68BF81EE249CF699000916D5 /* RegistrazioneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrazioneViewController.swift; sourceTree = "<group>"; };
 		68D22A612497BCBC00AAD87E /* ProdottiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdottiViewController.swift; sourceTree = "<group>"; };
 		68EB792F248500E900AA7DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegozioTableViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */,
+				68BF81EE249CF699000916D5 /* RegistrazioneViewController.swift */,
+				68BF81EC249CF557000916D5 /* LoginViewController.swift */,
 				68D22A612497BCBC00AAD87E /* ProdottiViewController.swift */,
 				6827268C248D3195005DB941 /* DetailNegozioViewController.swift */,
 			);
@@ -212,11 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BF81ED249CF557000916D5 /* LoginViewController.swift in Sources */,
 				E7D197AA2479757B003446A1 /* BarcodeDiProdotto.swift in Sources */,
 				680F903E24796BB700D38CCD /* Utente.swift in Sources */,
 				680F903624796B7800D38CCD /* CategoriaProdotto.swift in Sources */,
 				680F903A24796B7800D38CCD /* CategoriaDiProdotto.swift in Sources */,
 				680F903D24796BB700D38CCD /* Negozio.swift in Sources */,
+				68BF81EF249CF699000916D5 /* RegistrazioneViewController.swift in Sources */,
 				68EB7936248A8CED00AA7DBA /* NegozioTableViewController.swift in Sources */,
 				680F901924796AE100D38CCD /* AppDelegate.swift in Sources */,
 				680F903924796B7800D38CCD /* CategoriaDiNegozio.swift in Sources */,
