@@ -19,13 +19,14 @@ public class Utente: Codable {
     private var cognome:String
     private var partitaIVA:String
     
-    init(nome:String, cognome:String, partitaIva:String){
-        self.nome = nome
-        self.cognome = cognome
-        self.partitaIVA = partitaIva
-        self.tipologia = "venditore"
-        self.email = ""
-        self.pass = ""
+    init(_ dictionary: [String: Any]) {
+        self.codiceUtente = dictionary["codiceUtente"] as? Int ?? 0
+        self.email = dictionary["email"] as? String ?? ""
+        self.pass = dictionary["pass"] as? String ?? ""
+        self.tipologia = dictionary["tipologia"] as? String ?? ""
+        self.nome = dictionary["nome"] as? String ?? ""
+        self.cognome = dictionary["cognome"] as? String ?? ""
+        self.partitaIVA = dictionary["partitaIVA"] as? String ?? ""
     }
     
     /*setter*/

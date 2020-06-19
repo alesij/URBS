@@ -18,14 +18,15 @@ public class Negozio: Codable{
     private var logo:String
     private var codiceUtente:Int
     
-    init(cod:Int,nome:String, citta:String, indirizzo:String, logo:String, utente:Int){
-        self.codiceNegozio = cod
-        self.nome = nome
-        self.city = citta
-        self.indirizzo = indirizzo
-        self.logo = logo
-        self.codiceUtente = utente
+    init(_ dictionary: [String: Any]) {
+        self.codiceNegozio = dictionary["codiceNewgozio"] as? Int ?? 0
+        self.nome = dictionary["nome"] as? String ?? ""
+        self.city = dictionary["city"] as? String ?? ""
+        self.indirizzo = dictionary["indirizzo"] as? String ?? ""
+        self.logo = dictionary["logo"] as? String ?? ""
+        self.codiceUtente = dictionary["codiceUtente"] as? Int ?? 0
     }
+    
     
     
     /*setter*/

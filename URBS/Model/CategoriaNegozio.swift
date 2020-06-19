@@ -12,9 +12,9 @@ public class CategoriaNegozio: Codable{ // Tutte le categorie possibili
     private var codiceCategoria:Int
     private var nomeCategoria:String
     
-    init(Cod:Int, nome:String){
-        self.codiceCategoria = Cod
-        self.nomeCategoria = nome
+    init(_ dictionary: [String: Any]) {
+        self.codiceCategoria = dictionary["codiceCategoria"] as? Int ?? 0
+        self.nomeCategoria = dictionary["nomeCategoria"] as? String ?? ""
     }
     
     /* setter */
@@ -32,6 +32,6 @@ public class CategoriaNegozio: Codable{ // Tutte le categorie possibili
     }
     
     public func getNome() -> String{
-        self.nome
+        self.nomeCategoria
     }
 }

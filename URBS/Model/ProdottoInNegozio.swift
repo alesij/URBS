@@ -17,16 +17,16 @@ public class ProdottoInNegozio: Codable{
     private var descrizione:String
     private var immagine:String
     
-    init(codProdotto:Int, codNegozio:Int, disp:Bool, prezzo:Double, quantita:Int, immagine: String, descrizione: String){
-        self.codiceProdotto = codProdotto
-        self.codiceNegozio = codNegozio
-        self.availability = disp
-        self.prezzo = prezzo
-        self.quantity = quantita
-        self.immagine = immagine
-        self.descrizione = descrizione
+    init(_ dictionary: [String: Any]) {
+        self.codiceProdotto = dictionary["codiceProdotto"] as? Int ?? 0
+        self.codiceNegozio = dictionary["codiceNegozio"] as? Int ?? 0
+        self.availability = dictionary["availability"] as? Bool ?? false
+        self.prezzo = dictionary["prezzo"] as? Double ?? 0
+        self.quantity = dictionary["quantity"] as? Int ?? 0
+        self.descrizione = dictionary["descrizione"] as? String ?? ""
+        self.immagine = dictionary["immagine"] as? String ?? ""
     }
-
+    
     /*setter*/
     public func setCodiceProdotto(codProdotto:Int){
         self.codiceProdotto = codProdotto
@@ -55,7 +55,7 @@ public class ProdottoInNegozio: Codable{
     public func setImmagine(immagine:String){
         self.immagine = immagine
     }
-
+    
     
     
     /*getter*/

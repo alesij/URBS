@@ -13,14 +13,14 @@ public class CategoriaDiNegozio: Codable{ // coppie codiceNegozio - codiceCatego
     private var codiceNegozio:Int
     private var codiceCategoria:Int
     
-    init(codN:Int, codC:Int){
-        self.codiceNegozio = codN
-        self.codiceCategoria = codC
-    } 
+    init(_ dictionary: [String: Any]) {
+        self.codiceNegozio = dictionary["codiceNegozio"] as? Int ?? 0
+        self.codiceCategoria = dictionary["codiceCategoria"] as? Int ?? 0
+    }
     
     /* setter */
     public func setCodiceNegozio(codNegozio:Int){
-        self.codiceNegozio = codNegozio
+        self.codiceNegozio  = codNegozio
     }
     
     public func setCodiceCategoria(codCategoria:Int){

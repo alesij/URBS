@@ -13,9 +13,9 @@ public class CategoriaDiProdotto: Codable{ // coppie codiceNegozio - codiceCateg
     private var codiceProdotto:Int
     private var codiceCategoria:Int
     
-    init(codP:Int, codC:Int){
-        self.codiceProdotto = codP
-        self.codiceCategoria = codC
+    init(_ dictionary: [String: Any]) {
+        self.codiceProdotto = dictionary["codiceProdotto"] as? Int ?? 0
+        self.codiceCategoria = dictionary["codiceCategoria"] as? Int ?? 0
     }
     
     /* setter */

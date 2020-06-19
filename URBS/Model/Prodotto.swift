@@ -12,11 +12,11 @@ import UIKit
 public class Prodotto: Codable {
     private var codiceProdotto:Int
     private var nome:String
-
     
-    init(codP:Int, nome:String){
-        self.codiceProdotto = codP
-        self.nome = nome
+    
+    init(_ dictionary: [String: Any]) {
+        self.codiceProdotto = dictionary["codiceProdotto"] as? Int ?? 0
+        self.nome = dictionary["nome"] as? String ?? ""
     }
     
     /*setter*/

@@ -12,9 +12,9 @@ class CategoriaProdotto: Codable{ // Tutte le categorie possibili
     var codiceCategoria:Int
     var nomeProdotto:String
     
-    init(Cod:Int, nome:String){
-        self.codiceCategoria = Cod
-        self.nomeProdotto = nome
+    init(_ dictionary: [String: Any]) {
+        self.codiceCategoria = dictionary["codiceCategoria"] as? Int ?? 0
+        self.nomeProdotto = dictionary["nomeProdotto"] as? String ?? ""
     }
     
     /* setter */

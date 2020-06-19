@@ -13,9 +13,9 @@ class BarcodeProdotto: Codable{
     private var codProdotto:Int
     
     
-    init(codB:Int, codP:Int){
-        self.codBarcode = codB
-        self.codProdotto = codP
+    init(_ dictionary: [String: Any]) {
+        self.codBarcode = dictionary["codBarcode"] as? Int ?? 0
+        self.codProdotto = dictionary["codProdotto"] as? Int ?? 0
     }
     
     /* setter */

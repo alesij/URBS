@@ -13,12 +13,12 @@ public class Barcode: Codable{
     private var codBarCode:Int // chiave
     private var barcodeString:String
     private var barcodeImage:String
-
     
-    init(cod:Int, str:String, imgURL:String){
-        self.codBarCode = cod
-        self.barcodeString = str
-        self.barcodeImage = imgURL
+    
+    init(_ dictionary: [String: Any]) {
+        self.codBarCode = dictionary["codBarCode"] as? Int ?? 0
+        self.barcodeString = dictionary["barcodeString"] as? String ?? ""
+        self.barcodeImage = dictionary["barcodeImage"] as? String ?? ""
     }
     
     /* setter */
