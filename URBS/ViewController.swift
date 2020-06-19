@@ -18,7 +18,7 @@ class ViewController: UIViewController {
             if error != nil {
                 return
             }
-            print("\(detail)")
+            // salva detail in user defaults e vedi se te lo ritrovi.
         })
     }
 
