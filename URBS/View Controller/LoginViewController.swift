@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
                     //                    errore login
                 }else{
                     DispatchQueue.main.async {
-                       self.performSegue(withIdentifier: "login", sender: self)
+                       self.performSegue(withIdentifier: "LoginSegue", sender: self)
                     }
 
                 }
