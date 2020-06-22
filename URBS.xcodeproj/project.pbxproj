@@ -25,6 +25,8 @@
 		6882F771247AA7850089D222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6882F770247AA7850089D222 /* LaunchScreen.storyboard */; };
 		68BF81ED249CF557000916D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF81EC249CF557000916D5 /* LoginViewController.swift */; };
 		68BF81EF249CF699000916D5 /* RegistrazioneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF81EE249CF699000916D5 /* RegistrazioneViewController.swift */; };
+		68BF81F524A10C5B000916D5 /* AggiungiNegozioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF81F424A10C5B000916D5 /* AggiungiNegozioViewController.swift */; };
+		68BF81F724A117B0000916D5 /* ProfiloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF81F624A117B0000916D5 /* ProfiloViewController.swift */; };
 		68D22A622497BCBC00AAD87E /* ProdottiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D22A612497BCBC00AAD87E /* ProdottiViewController.swift */; };
 		68EB7930248500E900AA7DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB792F248500E900AA7DBA /* ViewController.swift */; };
 		68EB7936248A8CED00AA7DBA /* NegozioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */; };
@@ -55,6 +57,8 @@
 		6882F770247AA7850089D222 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68BF81EC249CF557000916D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		68BF81EE249CF699000916D5 /* RegistrazioneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrazioneViewController.swift; sourceTree = "<group>"; };
+		68BF81F424A10C5B000916D5 /* AggiungiNegozioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggiungiNegozioViewController.swift; sourceTree = "<group>"; };
+		68BF81F624A117B0000916D5 /* ProfiloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfiloViewController.swift; sourceTree = "<group>"; };
 		68D22A612497BCBC00AAD87E /* ProdottiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdottiViewController.swift; sourceTree = "<group>"; };
 		68EB792F248500E900AA7DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegozioTableViewController.swift; sourceTree = "<group>"; };
@@ -132,7 +136,9 @@
 			children = (
 				68EB7935248A8CED00AA7DBA /* NegozioTableViewController.swift */,
 				68BF81EE249CF699000916D5 /* RegistrazioneViewController.swift */,
+				68BF81F424A10C5B000916D5 /* AggiungiNegozioViewController.swift */,
 				68BF81EC249CF557000916D5 /* LoginViewController.swift */,
+				68BF81F624A117B0000916D5 /* ProfiloViewController.swift */,
 				68D22A612497BCBC00AAD87E /* ProdottiViewController.swift */,
 				6827268C248D3195005DB941 /* DetailNegozioViewController.swift */,
 			);
@@ -241,12 +247,14 @@
 				680F903924796B7800D38CCD /* CategoriaDiNegozio.swift in Sources */,
 				680F901B24796AE100D38CCD /* SceneDelegate.swift in Sources */,
 				6827268F248FC3D3005DB941 /* ProdottoTableViewCell.swift in Sources */,
+				68BF81F724A117B0000916D5 /* ProfiloViewController.swift in Sources */,
 				68EB7930248500E900AA7DBA /* ViewController.swift in Sources */,
 				E799B1E4249D0BA000F2A458 /* Utility.swift in Sources */,
 				6827268D248D3195005DB941 /* DetailNegozioViewController.swift in Sources */,
 				680F903524796B7800D38CCD /* Barcode.swift in Sources */,
 				680F903724796B7800D38CCD /* Prodotto.swift in Sources */,
 				680F903424796B7800D38CCD /* CategoriaNegozio.swift in Sources */,
+				68BF81F524A10C5B000916D5 /* AggiungiNegozioViewController.swift in Sources */,
 				680F903824796B7800D38CCD /* ProdottoInNegozio.swift in Sources */,
 				68D22A622497BCBC00AAD87E /* ProdottiViewController.swift in Sources */,
 			);

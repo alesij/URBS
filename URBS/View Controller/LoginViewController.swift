@@ -30,14 +30,17 @@ class LoginViewController: UIViewController {
                 if error != nil {
                     return
                 }
+                
                 // salva detail in user defaults e vedi se te lo ritrovi.
                 UserDefaults.standard.set(detail, forKey: "UID")
+                
                 if(detail<0){
                     //                    errore login
                 }else{
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "tabBar")
-                    self.present(vc, animated: true)
+                    DispatchQueue.main.async {
+                       self.performSegue(withIdentifier: "login", sender: self)
+                    }
+
                 }
             })
             

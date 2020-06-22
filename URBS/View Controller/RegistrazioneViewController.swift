@@ -30,6 +30,9 @@ class RegistrazioneViewController: UIViewController {
 //            qui va inserito il banner con scritto di compilare tutti i campi
         } else{
 //            qui va inserito il banner con la registrazione effettuata
+            self.dismiss(animated: true, completion: {
+                self.presentingViewController?.dismiss(animated: true, completion: nil)
+            })
         }
     }
     

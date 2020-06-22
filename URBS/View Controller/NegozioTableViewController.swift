@@ -53,9 +53,8 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
         immagine.image = UIImage(named: "Negozi")
         self.navigationController?.navigationItem.titleView = immagine
         self.hideKeyboardWhenTappedAround()
-        UserDefaults.standard.set(-1, forKey: "UID")
-
-        print(UserDefaults.standard.integer(forKey: "UID"))
+        
+//        qui va fatta la richiesta per istanziare l'oggetto utente e gli oggetti negozi
     }
     
     
