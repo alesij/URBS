@@ -30,6 +30,7 @@ class NegozioTableViewCell: UITableViewCell{
 
 class NegozioTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
+    var utenteLoggato: Utente?
     var searchNegozi = [Negozio]()
     var searching = false
 //    prova
@@ -52,8 +53,9 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
         immagine.image = UIImage(named: "Negozi")
         self.navigationController?.navigationItem.titleView = immagine
         self.hideKeyboardWhenTappedAround()
-        UserDefaults.standard.set(0, forKey: "UID")
-        
+        UserDefaults.standard.set(-1, forKey: "UID")
+
+        print(UserDefaults.standard.integer(forKey: "UID"))
     }
     
     

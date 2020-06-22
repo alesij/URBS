@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        if UserDefaults.standard.integer(forKey: "UID") == 0{
+        if UserDefaults.standard.integer(forKey: "UID") == -1{
         let vc = storyboard.instantiateViewController (withIdentifier: "LoginViewController") as! LoginViewController
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = vc

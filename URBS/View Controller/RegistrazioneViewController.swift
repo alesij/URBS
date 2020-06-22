@@ -25,6 +25,12 @@ class RegistrazioneViewController: UIViewController {
     
 
     @IBAction func RegistrazionePressed(_ sender: UIButton) {
+        if(nomeTextField.text == "" || cognomeTextField.text == "" || partitaIvaTextField.text == ""
+            || emailTextField.text == "" || passwordTextFIeld.text == ""){
+//            qui va inserito il banner con scritto di compilare tutti i campi
+        } else{
+//            qui va inserito il banner con la registrazione effettuata
+        }
     }
     
 }
