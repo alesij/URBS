@@ -51,7 +51,7 @@
                                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="Urh-Ry-MG3">
                                             <color key="tintColor" name="Arancio Scuro"/>
                                             <connections>
-                                                <action selector="savePressed:" destination="BYZ-38-t0r" id="Ck9-2J-KzL"/>
+                                                <action selector="savePress:" destination="BYZ-38-t0r" id="WZz-YH-Oni"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -61,6 +61,9 @@
                                 <rect key="frame" x="44" y="82" width="326" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Aggiungi immagine negozio"/>
+                                <connections>
+                                    <action selector="addImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kek-Qz-u0U"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Città" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nN-v9-20c">
                                 <rect key="frame" x="31" y="485" width="363" height="34"/>
@@ -90,13 +93,15 @@
                     <connections>
                         <outlet property="categoriaNegozioTextField" destination="0qB-MC-q79" id="IuE-Q0-mjk"/>
                         <outlet property="cittaTextField" destination="7nN-v9-20c" id="8FU-5a-n5B"/>
+                        <outlet property="fotoNegozioButton" destination="Zy7-lR-vbR" id="vMB-O5-gNy"/>
                         <outlet property="indirizzoTextField" destination="0dJ-pK-uD8" id="1jP-hN-cKo"/>
                         <outlet property="nomeNegozioTextField" destination="gkb-ic-r7A" id="sBf-o3-CPf"/>
+                        <outlet property="saveButton" destination="Urh-Ry-MG3" id="jqs-nO-6pC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3374" y="-1"/>
+            <point key="canvasLocation" x="3373.913043478261" y="-1.3392857142857142"/>
         </scene>
         <!--Detail Negozio View Controller-->
         <scene sceneID="0EX-PT-Pme">
@@ -1250,9 +1255,6 @@
             <point key="canvasLocation" x="2536" y="2281"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="4NL-ME-H83"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" name="Arancio Scuro"/>
     <resources>
         <image name="Aggiungi immagine negozio" width="326" height="250"/>

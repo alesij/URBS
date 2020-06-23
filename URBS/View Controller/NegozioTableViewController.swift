@@ -33,7 +33,8 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
     var utenteLoggato: Utente?
     var searchNegozi = [Negozio]()
     var searching = false
-//    prova
+    
+    var prova = "FRATM"
     @IBOutlet weak var searchBarNegozio: UISearchBar!
     @IBOutlet weak var negozioTableView: UITableView!
     var negozi = [Negozio]()
@@ -42,6 +43,7 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         negozioTableView.delegate = self
         negozioTableView.dataSource = self
         
@@ -53,12 +55,20 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
         immagine.image = UIImage(named: "Negozi")
         self.navigationController?.navigationItem.titleView = immagine
         self.hideKeyboardWhenTappedAround()
-        
 //        qui va fatta la richiesta per istanziare l'oggetto utente e gli oggetti negozi
+        
+        
     }
     
     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//    serve per poter richiamare la funzione addNegozio nella view successiva
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondVC = segue.destination as! AggiungiNegozioViewController
+        secondVC.delegate = self
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NegozioCell", for: indexPath) as! NegozioTableViewCell
 
         if searching{
@@ -124,6 +134,15 @@ class NegozioTableViewController: UIViewController, UITableViewDelegate, UITable
         searchNegozi = negozi.filter({$0.getNome().lowercased().contains(searchText.lowercased()) || $0.getIndirizzo().lowercased().contains(searchText.lowercased()) || $0.getCitta().lowercased().contains(searchText.lowercased())})
         searching = true
         negozioTableView.reloadData()
+        }
+    }
+}
+
+extension NegozioTableViewController: AggiungiNegozioDelegate{
+    func addNegozio(negozio: String) {
+        self.dismiss(animated: true) {
+            
+            self.negozioTableView.reloadData()
         }
     }
 }

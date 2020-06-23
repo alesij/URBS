@@ -31,7 +31,6 @@ class LoginViewController: UIViewController {
                     return
                 }
                 
-                // salva detail in user defaults e vedi se te lo ritrovi.
                 UserDefaults.standard.set(detail, forKey: "UID")
                 
                 if(detail<0){
