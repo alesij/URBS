@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        checkCredentials(email:"SonoGay", password:"Mi piace il cazzo", withCompletion: { detail, error in
+        checkCredentials(email:"prova", password:"prova", withCompletion: { detail, error in
             if error != nil {
                 return
             }
